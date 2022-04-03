@@ -1,11 +1,11 @@
 # llvm_example
 
-llvm example in llvm13
+llvm examples build in llvm13. Welcome contribute to more llvm example.
 
 ### How to use llvm_example
 1. 下载代码：\
 git clone git@github.com:awakeljw/llvm_example.git \
-git submodule update --init --recursive \
+git submodule update --init --recursive 
 
 2. 编译
 cmake -B build \
