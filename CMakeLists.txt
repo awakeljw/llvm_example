@@ -2,11 +2,14 @@ cmake_minimum_required(VERSION 3.12)
 project(llvm_jit)
 
 add_subdirectory(llvm-project/llvm)
-find_package(LLVM REQUIRED CONFIG)
 
 message(STATUS "BINARY output: " ${PROJECT_BINARY_DIR})
 message(STATUS "SOURCE output: " ${PROJECT_SOURCE_DIR})
 message(STATUS "CMAKE CURRENT SOURCE DIR: " ${CMAKE_CURRENT_SOURCE_DIR})
+set(LLVM_DIR ${PROJECT_BINARY_DIR}/llvm-project/llvm/lib/cmake/llvm/)
+message(STATUS "BINARY output: " ${LLVM_DIR})
+find_package(LLVM REQUIRED CONFIG HINTS "${LLVM_DIR}")
+
 #SET(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 
 include_directories(${LLVM_INCLUDE_DIRS})
