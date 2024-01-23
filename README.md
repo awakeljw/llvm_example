@@ -12,6 +12,9 @@ cmake -B build \
 cmake --build build
 
 ### Examples
-bitcode example: how to read bitcode and execute by executionengine \
-pass example: how to use passManager \
-runtimedyld example: how to compile Module to ObjectFile and use runtimeDyld to getSymbol
+*fibonacci.cpp* : llvm original example \
+*jit.cpp* : learn mangle and demangle \
+*jit_example.cpp* : how to use RTDyldMemoryManager \
+*bitcode_example.cpp* : how to read bitcode and execute by ExecutionEngine \
+*pass_example.cpp* : how to use PassManager \
+*runtimedyld_example.cpp* : how to compile Module to ObjectFile and use runtimeDyld to getSymbol
