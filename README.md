@@ -12,6 +12,6 @@ cmake -B build \
 cmake --build build
 
 ### Examples
-bitcode example: how to read bitcode and execute by executionengine
-pass example: how to use passManager
+bitcode example: how to read bitcode and execute by executionengine \
+pass example: how to use passManager \
 runtimedyld example: how to compile Module to ObjectFile and use runtimeDyld to getSymbol
