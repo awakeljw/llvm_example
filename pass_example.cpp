@@ -59,6 +59,9 @@ int main(int argc, char** argv) {
         }
     }
 
+    outs() << "\n----------\n" << *module.get();
+    outs() << "-----------\n";
+
     outs() << "function pass manager\n";
     llvm::PassManagerBuilder builder;
     llvm::legacy::PassManager mpm;
