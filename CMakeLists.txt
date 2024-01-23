@@ -20,6 +20,9 @@ add_definitions(-DLLVM_DISABLE_ABI_BREAKING_CHECKS_ENFORCING=1)
 add_executable(bitcode_example bitcode_example.cpp)
 add_executable(pass_example pass_example.cpp)
 add_executable(runtimedyld_example runtimedyld_example.cpp)
+add_executable(jit_example jit_example.cpp)
+add_executable(llvm_example fibonacci.cpp)
+add_executable(jit_example2 jit.cpp)
 llvm_map_components_to_libnames(llvm_libs all support core irreader executionengine mc mcjit interpreter nativecodegen ipo x86asmparser native)
 
 add_custom_command(TARGET bitcode_example
@@ -36,3 +39,6 @@ add_custom_command(TARGET bitcode_example
 target_link_libraries(bitcode_example PUBLIC ${llvm_libs})
 target_link_libraries(pass_example PUBLIC ${llvm_libs})
 target_link_libraries(runtimedyld_example PUBLIC ${llvm_libs})
+target_link_libraries(jit_example PUBLIC ${llvm_libs})
+target_link_libraries(jit_example2 PUBLIC ${llvm_libs})
+target_link_libraries(llvm_example PUBLIC ${llvm_libs})
