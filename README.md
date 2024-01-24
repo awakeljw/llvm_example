@@ -17,4 +17,5 @@ cmake --build build
 *jit_example.cpp* : how to use RTDyldMemoryManager \
 *bitcode_example.cpp* : how to read bitcode and execute by ExecutionEngine \
 *pass_example.cpp* : how to use PassManager \
-*runtimedyld_example.cpp* : how to compile Module to ObjectFile and use runtimeDyld to getSymbol
+*runtimedyld_example.cpp* : how to compile Module to ObjectFile and use runtimeDyld to getSymbol \
+*orcjit* : how to use orcjit
